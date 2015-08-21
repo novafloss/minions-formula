@@ -1,0 +1,2 @@
+dumbproject:
+  name: value

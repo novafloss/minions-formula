@@ -1,0 +1,3 @@
+{{ env }}:
+  '*':
+    - dumbproject.install

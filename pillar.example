@@ -1,0 +1,14 @@
+# -*- yaml -*-
+
+project:
+  user: root
+  group: root
+  sources_dir: /var/projects
+  config_dir: /etc/projects
+  log_dir: /var/log/projects
+  setups:
+    mylocalproj:
+      path: /path/to/deploy/dir
+    mygitotherproj:
+      git: git@github.com:me/myproj.git
+      version: develop

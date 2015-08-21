@@ -1,0 +1,6 @@
+{% set dumbproject = salt['grains.filter_by']({
+    'default': {'destdir': '/run'},
+    }, merge=salt['pillar.get']('dumbproject', {})) -%}
+{% set dumbproject = salt['grains.filter_by']({
+    'default': dumbproject,
+    }, merge=salt['grains.get']('dumbproject', {})) -%}

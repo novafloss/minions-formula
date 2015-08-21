@@ -1,0 +1,9 @@
+checkout:
+  post:
+    - sudo test/circleci-setup.sh
+
+test:
+  pre:
+    - env
+  override:
+    - sudo make test
