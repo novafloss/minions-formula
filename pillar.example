@@ -1,0 +1,14 @@
+# -*- yaml -*-
+
+minions:
+  user: root
+  group: root
+  sources_dir: /var/minions
+  config_dir: /etc/minions
+  log_dir: /var/log/minions
+  setups:
+    mylocalproj:
+      path: /path/to/deploy/dir
+    mygitotherproj:
+      git: git@github.com:me/myproj.git
+      version: develop

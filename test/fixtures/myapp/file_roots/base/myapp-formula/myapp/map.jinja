@@ -1,0 +1,3 @@
+{% set myapp = salt['grains.filter_by']({
+    'default': {'destdir': '/run'},
+    }, merge=salt['pillar.get']('myapp', {})) -%}

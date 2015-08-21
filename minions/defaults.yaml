@@ -1,0 +1,7 @@
+sources_dir: /var/minions
+config_dir: /etc/minions
+cache_dir: /var/cache/minions
+user: root
+group: root
+log_dir: /var/log/minions
+setups: {}
