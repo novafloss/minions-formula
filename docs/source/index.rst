@@ -11,4 +11,6 @@ Contents:
    :maxdepth: 1
 
    purpose
+   format
    readme
+   glossary
