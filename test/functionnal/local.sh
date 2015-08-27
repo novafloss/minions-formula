@@ -1,15 +1,17 @@
 #!/bin/bash
+#
+# deploy a project from a local path
+#
 
 set -eux
 
 TOP_SRCDIR=$(readlink -f $(dirname $0)/../..)
 cd ${TOP_SRCDIR}
 
-. test/_testlib.sh
+function setup {
+    base_setup
 
-base_setup
-
-cat > ${DESTDIR}/etc/salt/grains <<EOF
+    cat > ${TMP_DIR}/etc/salt/grains <<EOF
 project:
 $(base_grains)
   setups:
@@ -21,9 +23,12 @@ dumbproject:
   destdir: ${DESTDIR}
 EOF
 
-salt-call_ saltutil.clear_cache
-salt-call_ saltutil.refresh_pillar
-salt-call_ saltutil.sync_all
+    salt-call_ saltutil.refresh_pillar
+    salt-call_ saltutil.sync_all
+}
+
+. test/_testlib.sh
+
 salt-call_ state.sls project
 salt-call_ project.call dumb install
 
