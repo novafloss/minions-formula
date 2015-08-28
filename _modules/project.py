@@ -1,10 +1,14 @@
+import logging
 import os
 import subprocess
 
 import salt.exceptions as exc
 
 
-def call(project, action):
+logger = logging.getLogger(__name__)
+
+
+def call(project, action, test=False, *args, **kwargs):
     """
     Execute a named top on a specific project.
 
@@ -17,7 +21,8 @@ def call(project, action):
         raise exc.CommandNotFoundError("Unknown project "+project)
 
     # Calls state.top to trigger a named highstate
-    args = [script, 'state.top', action + '.sls']
+    args = [script, 'state.top', action + '.sls', 'test=%r' % bool(test)]
+    logger.debug("Calling %r", args)
     child = subprocess.Popen(
         args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     child.wait()
@@ -31,20 +36,3 @@ def call(project, action):
         raise exc.CommandExecutionError(out)
 
     return out
-
-
-def merge_grains(defaults, from_grains):
-    """
-    Compute grains to inject configuration in project.
-    """
-
-    grains_get = __salt__['grains.get']  # noqa
-
-    grains = defaults.copy()
-    from_grains = from_grains.copy()
-    for dest, src in from_grains.items():
-        data = grains_get(src)
-        if not data:
-            raise exc.SaltException("Missing grains %r" % src)
-        grains[dest] = data
-    return grains

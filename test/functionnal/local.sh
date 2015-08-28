@@ -17,10 +17,9 @@ $(base_grains)
   setups:
    dumb:
      path: ${TOP_SRCDIR}/test/fixtures/dumb-project
-     grains_from_grains:
-       dumbproject: dumbproject
-dumbproject:
-  destdir: ${DESTDIR}
+     grains:
+       dumbproject:
+         destdir: ${DESTDIR}
 EOF
 
     salt-call_ saltutil.refresh_pillar

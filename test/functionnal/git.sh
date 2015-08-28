@@ -32,10 +32,9 @@ $(base_grains)
    dumb:
      git: ${GIT_DIR}
      version: master
-     grains_from_grains:
-       dumbproject: dumbproject
-dumbproject:
-  destdir: ${DESTDIR}
+     grains:
+       dumbproject:
+         destdir: ${DESTDIR}
 EOF
 
     salt-call_ saltutil.refresh_pillar

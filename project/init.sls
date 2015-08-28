@@ -60,8 +60,6 @@ project_{{ name }}_config_dir:
     - makedirs: true
 
 {% set setup_grains = setup.get('grains', {}) -%}
-{% set from_grains = setup.get('grains_from_grains', {}) -%}
-{% set setup_grains = salt['project.merge_grains'](defaults=setup_grains, from_grains=from_grains) -%}
 
 project_{{ name }}_minion_config:
   file.managed:
