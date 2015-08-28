@@ -5,10 +5,18 @@ import salt.exceptions as exc
 
 
 def call(project, action):
+    """
+    Execute a named top on a specific project.
+
+    The action is the name of the corresponding top, without ``.sls`` suffix.
+    """
+
+    # Compute deploy command.
     script = '/usr/local/sbin/deploy-' + project
     if not os.access(script, os.X_OK):
         raise exc.CommandNotFoundError("Unknown project "+project)
 
+    # Calls state.top to trigger a named highstate
     args = [script, 'state.top', action + '.sls']
     child = subprocess.Popen(
         args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -26,6 +34,10 @@ def call(project, action):
 
 
 def merge_grains(defaults, from_grains):
+    """
+    Compute grains to inject configuration in project.
+    """
+
     grains_get = __salt__['grains.get']  # noqa
 
     grains = defaults.copy()
