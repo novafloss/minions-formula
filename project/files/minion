@@ -16,4 +16,5 @@ file_roots:
 pillar_roots:
   {{ env }}:
     - {{ deploy_root }}/pillars/{{ env }}
-grains: {{ grains }}
+grains:
+  {{ grains|yaml(False)|indent(2) }}
