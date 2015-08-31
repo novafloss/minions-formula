@@ -8,7 +8,7 @@ import salt.exceptions as exc
 logger = logging.getLogger(__name__)
 
 
-def call(project, action, test=False, *args, **kwargs):
+def call(project, action, test=False, **kwargs):
     """
     Execute an action on a specific project.
     """
