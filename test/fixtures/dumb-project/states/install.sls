@@ -1,3 +1,2 @@
-{{ env }}:
-  '*':
-    - dumbproject.install
+include:
+  - dumbproject.install
