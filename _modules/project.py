@@ -10,9 +10,7 @@ logger = logging.getLogger(__name__)
 
 def call(project, action, test=False, *args, **kwargs):
     """
-    Execute a named top on a specific project.
-
-    The action is the name of the corresponding top, without ``.sls`` suffix.
+    Execute an action on a specific project.
     """
 
     # Compute deploy command.
