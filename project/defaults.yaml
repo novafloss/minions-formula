@@ -1,5 +1,6 @@
 sources_dir: /var/projects
 config_dir: /etc/projects
+cache_dir: /var/cache/projects
 user: root
 group: root
 log_dir: /var/log/projects

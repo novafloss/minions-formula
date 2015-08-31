@@ -24,10 +24,19 @@ project_log_dir:
     - mode: 0770
     - makedirs: true
 
+project_cache_dir:
+  file.directory:
+    - name: {{ project.cache_dir }}
+    - user: root
+    - group: root
+    - mode: 0770
+    - makedirs: true
+
 {% for name, setup in project.setups.iteritems() -%}
 {%- set src_dir = project.sources_dir + '/' + name %}
 {%- set config_dir = project.config_dir + '/' + name %}
 {%- set log_dir = project.log_dir + '/' + name %}
+{%- set cache_dir = project.cache_dir + '/' + name %}
 
 {%- if setup.get('path', None) %}
 {%- set deploy_root = src_dir -%}
@@ -74,6 +83,7 @@ project_{{ name }}_minion_config:
         project: {{ project }}
         setup: {{ setup }}
         src_dir: {{ src_dir }}
+        cache_dir: {{ cache_dir }}
         config_dir: {{ config_dir }}
         log_dir: {{ log_dir }}
         deploy_root: {{ deploy_root }}
