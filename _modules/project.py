@@ -21,7 +21,7 @@ def call(project, action, test=False, *args, **kwargs):
         raise exc.CommandNotFoundError("Unknown project "+project)
 
     # Calls state.top to trigger a named highstate
-    args = [script, 'state.top', action + '.sls', 'test=%r' % bool(test)]
+    args = [script, 'state.sls', action, 'test=%r' % bool(test)]
     logger.debug("Calling %r", args)
     child = subprocess.Popen(
         args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

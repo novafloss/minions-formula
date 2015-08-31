@@ -34,6 +34,5 @@ final pillar_roots will contains::
 ``states`` directory
 ====================
 
-Is a regular formula directory, containing :term:`named tops <named top>`. tops
-includes state files. In the sample, ``install.sls`` is a named top
-implementing the ``install`` deployment command.
+Is a regular formula directory, containing :term:`action <actions>`. In the
+sample, ``install.sls`` implements the ``install` action.
