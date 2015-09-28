@@ -1,4 +1,4 @@
-``project``
+``minions``
 -----------
 
 Deploy a self-contained standalone salt minion to manage locally a project on
@@ -12,20 +12,24 @@ the minion.
    :target: https://readthedocs.org/projects/minions-formula/?badge=latest
    :alt: Documentation Status
 
+.. image:: docs/source/minions.jpg
+   :alt: Minions!!
+
+
 Available states
 ~~~~~~~~~~~~~~~~
 
-``project``
+``minions``
 +++++++++++
 
 
-Deploys all project.
+Deploys all standalone minions.
 
 Available modules
 ~~~~~~~~~~~~~~~~~
 
 
-``project.call``
-++++++++++++++++
+``minions.sls``
++++++++++++++++
 
-Call a specific action on the project's salt setup.
+Call a specific action on one minion.
