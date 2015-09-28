@@ -1,12 +1,11 @@
-==================================
- :term:`Project <project>` format
-==================================
+=================================
+ :term:`Minions <minion>` format
+=================================
 
-A project deployment code is a directory containing salt files. Projects
-provides states, pillars and named states top.sls. You can see it as a formula
-tighted with pillars.
+A minion is defined by a directory containing salt files. Minions provides
+states and pillars. You can see it as a formula tighted with pillars.
 
-Here is the tree of sample deployment project:
+Here is the tree of sample minion:
 
 ::
 
@@ -34,5 +33,5 @@ final pillar_roots will contains::
 ``states`` directory
 ====================
 
-Is a regular formula directory, containing :term:`action <actions>`. In the
-sample, ``install.sls`` implements the ``install` action.
+Is a regular formula directory, containing :term:`actions <action>`. In the sample,
+``install.sls`` implements the ``install`` action.

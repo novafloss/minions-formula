@@ -9,7 +9,7 @@
      A state provided by projects with a semantic name, like ``install`` or
      ``migrate``, called with ``state.sls``.
 
-   project
+   minion
       The deployement code to deploy your product.
 
    setup
