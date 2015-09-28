@@ -50,7 +50,7 @@ minions_{{ name }}_symlink:
     - force: true
 
 {%- elif setup.get('git', None) %}
-{%- set deploy_root = src_dir + '/.deploy' -%}
+{%- set deploy_root = src_dir + '/.minion' -%}
 minions_{{ name }}_git:
   git.latest:
     - name: {{ setup.git }}
