@@ -39,6 +39,9 @@ minions:
 $(base_grains)
 EOF
 
+
+    salt-call_ saltutil.refresh_pillar
+    salt-call_ saltutil.sync_all
 }
 
 # Base teardown for testcase cleaning.

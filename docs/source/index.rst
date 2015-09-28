@@ -12,5 +12,6 @@ Contents:
 
    purpose
    format
+   testing
    readme
    glossary

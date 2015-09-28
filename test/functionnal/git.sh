@@ -36,9 +36,6 @@ $(base_grains)
        dumbproject:
          destdir: ${DESTDIR}
 EOF
-
-    salt-call_ saltutil.refresh_pillar
-    salt-call_ saltutil.sync_all
 }
 
 . test/_testlib.sh

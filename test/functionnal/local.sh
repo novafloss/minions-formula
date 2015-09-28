@@ -3,17 +3,27 @@
 # deploy a project from a local path
 #
 
-set -eux
+# Failfast on first failing command
+set -o errexit
+# Consider undefined variables as an error
+set -o nounset
+# Consider a command failing, evin
+set -o pipefail
+# Log each command executed
+set -o xtrace
 
-TOP_SRCDIR=$(readlink -f $(dirname $0)/../..)
-cd ${TOP_SRCDIR}
-
-function setup {
+# setup is an optionnal function executed before the test.
+setup () {
+    # base_setup configure a dedicated salt-call with the formula.
     base_setup
 
+    # ${TMP_DIR}/etc/salt is the directory where salt is configured. The shell
+    # function base_grains contains base grains overrides to configure
+    # minions-formula in the isolated environment.
     cat > ${TMP_DIR}/etc/salt/grains <<EOF
 minions:
 $(base_grains)
+# Here, configure the minions formula
   setups:
    dumb:
      path: ${TOP_SRCDIR}/test/fixtures/dumb-project
@@ -21,14 +31,23 @@ $(base_grains)
        dumbproject:
          destdir: ${DESTDIR}
 EOF
-
-    salt-call_ saltutil.refresh_pillar
-    salt-call_ saltutil.sync_all
 }
+
+# Custom optionnal teardown
+teardown () {
+    base_teardown
+}
+
+# Source the base _testlib.sh script, after `setup` is defined. This script
+# provides base_setup, base_grains and base_teardown functions. It ensure
+# teardown is always executed at exit of script.
 
 . test/_testlib.sh
 
+# Execute tests commands. Not the suffixed salt-call_ function. It's just an
+# alias to execute salt-call in the isolated environment.
 salt-call_ state.sls minions
 salt-call_ minions.sls dumb install
 
+# asserts than test is successful.
 test -e ${DESTDIR}/dumb-installed
