@@ -11,8 +11,8 @@ manage as much as possible.
 In the following schema is summarized the architecture of minions with
 ``minions-formula``. The salt-master configure ``minions-formula`` to point to
 dev's projects. Inside the minion, each project has it's own standalone salt
-minion with project's states, pillars and external formulas and additionnal
-grains pushed from salt-master.
+minion with project's states, pillars, external formulas and additionnal grains
+pushed from salt-master.
 
 .. image:: architecture.*
    :alt: Architecture
