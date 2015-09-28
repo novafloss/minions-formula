@@ -5,14 +5,14 @@
 With the devops movements, you want to open the plateform to developers so they
 can push their code and settings up to the production environment. But as an
 admin sys, you don't want to let developers manage your
-salt-master. ``project-formula`` helps you split deployment process to let devs
+salt-master. ``minions-formula`` helps you split deployment process to let devs
 manage as much as possible.
 
-In the following schema is summarized the architecture of projects with
-project-formula. The salt-master configure ``project-formula`` to point to
-dev's projects. Inside the minion, each project has it's own masterless with
-projects states, pillars and external formulas and additionnal grains pushed
-from salt-master.
+In the following schema is summarized the architecture of minions with
+``minions-formula``. The salt-master configure ``minions-formula`` to point to
+dev's projects. Inside the minion, each project has it's own standalone salt
+minion with project's states, pillars and external formulas and additionnal
+grains pushed from salt-master.
 
 .. image:: architecture.svg
    :alt: Architecture
