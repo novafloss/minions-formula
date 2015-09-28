@@ -35,7 +35,9 @@ EOF
 
 # Custom optionnal teardown
 teardown () {
-    base_teardown
+    exit_code=$1
+
+    base_teardown $@
 }
 
 # Source the base _testlib.sh script, after `setup` is defined. This script
