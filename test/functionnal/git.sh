@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# deploy a project from git
+# deploy a minion from git
 #
 
 set -eux
@@ -26,7 +26,7 @@ function setup {
     git commit -m import
 
     cat > ${TMP_DIR}/etc/salt/grains <<EOF
-project:
+minions:
 $(base_grains)
   setups:
    dumb:
