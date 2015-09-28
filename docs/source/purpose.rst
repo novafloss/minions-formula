@@ -19,6 +19,10 @@ pushed from salt-master.
    :width: 90%
    :align: center
 
+You can provide a simple entry point for dev to update their minions on
+demand. For example, developers send an event to salt-master that trigger the
+update or the execution of a state in their own minions.
+
 Use cases
 =========
 
