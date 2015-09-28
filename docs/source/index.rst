@@ -1,5 +1,5 @@
 =================
- project-formula
+ minions-formula
 =================
 
 Delegate isolated deployment to developer team with salt!
