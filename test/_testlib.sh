@@ -4,7 +4,7 @@ TEST_CASE=$(basename $0)
 TOP_SRCDIR=$(readlink -f $(dirname $0)/../..)
 # Base directory where we store temporary file for the test case. We fall back
 # to fast shared memory mount.
-BASE_DIR=${BASE_DIR:=/run/shm/project-formula}
+BASE_DIR=${BASE_DIR:=/run/shm/minions-formula}
 # Isolate each test case
 TMP_DIR=${BASE_DIR}/${TEST_CASE}
 # This is where the project will be deployed
@@ -35,7 +35,7 @@ EOF
     # Basic grains. Not really useful since no projects is configured at
     # all. Should be overriden by tests.
     cat > ${TMP_DIR}/etc/salt/grains <<EOF
-project:
+minions:
 $(base_grains)
 EOF
 
@@ -74,7 +74,7 @@ salt-call_ () {
 base_grains () {
     cat <<EOF
   sources_dir: ${DESTDIR}/src
-  config_dir: ${DESTDIR}/etc/projects
+  config_dir: ${DESTDIR}/etc/minions
   log_dir: ${DESTDIR}/log
   user: $(id -un)
   group: $(id -gn)

@@ -19,9 +19,9 @@ function setup {
     git init
     git checkout -b master
     # Put dumb deploy code in a .deploy/ directory
-    cp -ar ${TOP_SRCDIR}/test/fixtures/dumb-project ${GIT_WORKTREE}/.deploy
+    cp -ar ${TOP_SRCDIR}/test/fixtures/dumb-project ${GIT_WORKTREE}/.minion
     pushd ${GIT_WORKTREE}
-    git add -f .deploy
+    git add -f .minion
     popd
     git commit -m import
 
@@ -43,7 +43,7 @@ EOF
 
 . test/_testlib.sh
 
-salt-call_ state.sls project
-salt-call_ project.call dumb install
+salt-call_ state.sls minions
+salt-call_ minions.sls dumb install
 
 test -e ${DESTDIR}/dumb-installed

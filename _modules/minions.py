@@ -8,13 +8,13 @@ import salt.exceptions as exc
 logger = logging.getLogger(__name__)
 
 
-def call(project, action, test=False, **kwargs):
+def call(minion, action, test=False, **kwargs):
     """
-    Execute an action on a specific project.
+    Execute sls on a specific minion.
     """
 
     # Compute deploy command.
-    script = '/usr/local/sbin/deploy-' + project
+    script = '/usr/local/sbin/minion-' + project
     if not os.access(script, os.X_OK):
         raise exc.CommandNotFoundError("Unknown project "+project)
 

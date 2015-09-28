@@ -1,11 +1,11 @@
 # -*- yaml -*-
 
-project:
+minions:
   user: root
   group: root
-  sources_dir: /var/projects
-  config_dir: /etc/projects
-  log_dir: /var/log/projects
+  sources_dir: /var/minions
+  config_dir: /etc/minions
+  log_dir: /var/log/minions
   setups:
     mylocalproj:
       path: /path/to/deploy/dir

@@ -12,7 +12,7 @@ function setup {
     base_setup
 
     cat > ${TMP_DIR}/etc/salt/grains <<EOF
-project:
+minions:
 $(base_grains)
   setups:
    dumb:
@@ -28,7 +28,7 @@ EOF
 
 . test/_testlib.sh
 
-salt-call_ state.sls project
-salt-call_ project.call dumb install
+salt-call_ state.sls minions
+salt-call_ minions.sls dumb install
 
 test -e ${DESTDIR}/dumb-installed

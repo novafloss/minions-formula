@@ -1,7 +1,7 @@
-{% import_yaml 'project/defaults.yaml' as project -%}
-{% set project = salt['grains.filter_by']({
-    'default': project,
-    }, merge=salt['pillar.get']('project', {})) -%}
-{% set project = salt['grains.filter_by']({
-    'default': project,
-    }, merge=salt['grains.get']('project', {})) -%}
+{% import_yaml 'minions/defaults.yaml' as minions -%}
+{% set minions = salt['grains.filter_by']({
+    'default': minions,
+    }, merge=salt['pillar.get']('minions', {})) -%}
+{% set minions = salt['grains.filter_by']({
+    'default': minions,
+    }, merge=salt['grains.get']('minions', {})) -%}
