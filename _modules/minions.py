@@ -8,15 +8,15 @@ import salt.exceptions as exc
 logger = logging.getLogger(__name__)
 
 
-def call(minion, action, test=False, **kwargs):
+def sls(minion, action, test=False, **kwargs):
     """
     Execute sls on a specific minion.
     """
 
     # Compute deploy command.
-    script = '/usr/local/sbin/minion-' + project
+    script = '/usr/local/sbin/minion-' + minion
     if not os.access(script, os.X_OK):
-        raise exc.CommandNotFoundError("Unknown project "+project)
+        raise exc.CommandNotFoundError("Unknown minion " + minion)
 
     # Calls state.top to trigger a named highstate
     args = [script, 'state.sls', action, 'test=%r' % bool(test)]
