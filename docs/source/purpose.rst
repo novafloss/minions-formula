@@ -14,7 +14,7 @@ dev's projects. Inside the minion, each project has it's own standalone salt
 minion with project's states, pillars and external formulas and additionnal
 grains pushed from salt-master.
 
-.. image:: architecture.svg
+.. image:: architecture.*
    :alt: Architecture
    :width: 90%
    :align: center
