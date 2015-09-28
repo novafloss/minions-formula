@@ -1,8 +1,7 @@
 ``minions``
 -----------
 
-Deploy a self-contained standalone salt minion to manage locally a project on
-the minion.
+Delegate deployement to local self-contained standalone minions.
 
 .. image:: https://circleci.com/gh/novafloss/minions-formula.svg?style=shield
    :target: https://circleci.com/gh/novafloss/minions-formula
