@@ -12,7 +12,7 @@ the minion.
    :target: https://readthedocs.org/projects/minions-formula/?badge=latest
    :alt: Documentation Status
 
-.. image:: docs/source/minions.jpg
+.. image:: minions.jpg
    :alt: Minions!!
 
 
