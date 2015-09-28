@@ -1,6 +1,6 @@
-def called(name, project, action, **kwargs):
+def sls(name, minion, action, **kwargs):
     """
-    Ensure a corresponding action has been called to a project.
+    Ensure a corresponding action has been called to minion.
 
     Note that test mode is delegated to local ``state.sls`` command.
     """
@@ -12,12 +12,12 @@ def called(name, project, action, **kwargs):
         'comment': 'Nothing runned'
     }
 
-    project_call = __salt__['project.call']  # noqa
+    minions_sls = __salt__['minions.sls']  # noqa
 
     test = __opts__['test']  # noqa
 
     try:
-        out = project_call(project, action, test=test)
+        out = minions_sls(minion, action, test=test)
         ret['changes']['out'] = out
     except Exception, e:
         ret['comment'] = e.message
