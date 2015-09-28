@@ -51,7 +51,7 @@ base_teardown () {
         read
     fi
 
-    rm -f /usr/local/sbin/deploy-*
+    rm -f /usr/local/sbin/minion-*
     rm -rf --one-file-system ${TMP_DIR}
 
     # fancy explicit output
