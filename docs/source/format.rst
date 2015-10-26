@@ -46,5 +46,6 @@ the project repository:
 .. code-block:: yaml
 
    minions:
-     myapp:
-       git: git@github.com:mycompany/myapp.git
+     setups:
+       myapp:
+         git: git@github.com:mycompany/myapp.git
