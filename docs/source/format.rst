@@ -35,3 +35,16 @@ final pillar_roots will contains::
 
 Is a regular formula directory, containing :term:`actions <action>`. In the sample,
 ``install.sls`` implements the ``install`` action.
+
+Deploying from git repository
+=============================
+
+You can fetch a minion configuration from a git repository. Put the minion
+directory in ``.minion`` in the root of your project and setup salt to clone
+the project repository:
+
+.. code-block:: yaml
+
+   minions:
+     myapp:
+       git: git@github.com:mycompany/myapp.git
