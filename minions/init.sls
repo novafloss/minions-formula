@@ -112,7 +112,7 @@ minions_{{ name }}_script:
     - group: root
     - mode: 0770
     - template: jinja
-    - source: salt://minions/files/deploy
+    - source: salt://minions/files/minion-script
     - context:
         minions: {{ minions }}
         name: {{ name }}
