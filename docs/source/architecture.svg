@@ -9,7 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="378.03125"
+   width="442.03125"
    height="264.21875"
    id="svg2"
    version="1.1"
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="6.3061384"
-     inkscape:cy="26.096855"
+     inkscape:cx="186.44501"
+     inkscape:cy="35.289243"
      inkscape:document-units="pt"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,12 +39,12 @@
      showguides="false"
      inkscape:guide-bbox="true"
      fit-margin-top="4"
-     fit-margin-left="64"
-     fit-margin-right="64"
+     fit-margin-left="96"
+     fit-margin-right="96"
      fit-margin-bottom="4">
     <sodipodi:guide
        orientation="0,1"
-       position="-14.222538,309.81053"
+       position="17.777462,309.81053"
        id="guide3180" />
   </sodipodi:namedview>
   <metadata
@@ -63,7 +63,7 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-88.46875,-651.0625)">
+     transform="translate(-56.46875,-651.0625)">
     <rect
        y="741.22858"
        x="153.08701"
@@ -187,24 +187,24 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="103.21753"
+       x="74.226151"
        y="844.57581"
        id="text3795"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3797"
-         x="103.21753"
+         x="74.226151"
          y="844.57581">OPS world</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="102.85523"
+       x="73.863853"
        y="826.89813"
        id="text3799"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3801"
-         x="102.85523"
+         x="73.863853"
          y="826.89813">DEV world</tspan></text>
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
