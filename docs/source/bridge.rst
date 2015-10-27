@@ -13,3 +13,13 @@ bridge.
        pillars:
          myapp:
            database_dsn: postgres://username:password@host/database
+
+In the minion, you can include these pillar ``top.sls`` with:
+
+.. code-block::
+
+   {{ env }}:
+      '*':
+        - master_pillars
+
+The content of this pillar is a contract between dev and ops.
