@@ -13,7 +13,7 @@ def sls(minion, mods, test=False, **kwargs):
     Execute sls on a specific minion.
     """
 
-    kwargs.setdefault('saltenv', __opts__['environment'])  # noqa
+    kwargs.setdefault('saltenv', __opts__['environment'] or 'base')  # noqa
     return module(minion, 'state.sls', mods=mods, test=test, **kwargs)
 
 
