@@ -36,6 +36,29 @@ def sls(minion, action, test=False, **kwargs):
 
     return out
 
+# Here is now a workaround to output multiline YAML string as literal. This is
+# required to handle GPG output.
+#
+# >>> data = """\
+# ... name: |
+# ...     0
+# ...     1
+# ... """
+# >>> print data
+# name: |
+#     0
+#     1
+#
+# >>> out = yaml.dump(yaml.load(data), default_flow_style=False)
+# >>> print out
+# name: '0
+#
+#   1
+#
+#   '
+#
+# >>>
+
 
 class literal_str(str):
     def __repr__(self):
