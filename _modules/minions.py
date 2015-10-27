@@ -1,6 +1,7 @@
 import logging
 import os
 import subprocess
+import yaml as libyaml
 
 import salt.exceptions as exc
 
@@ -34,3 +35,34 @@ def sls(minion, action, test=False, **kwargs):
         raise exc.CommandExecutionError(out)
 
     return out
+
+
+class literal_str(str):
+    def __repr__(self):
+        return 'literal' + super(literal_str, self).__repr__()
+
+
+def literal_str_representer(dumper, data):
+    return dumper.represent_scalar(u'tag:yaml.org,2002:str', data, style='|')
+
+
+libyaml.add_representer(literal_str, literal_str_representer)
+
+
+def annotateliterals(data):
+    for k, v in data.items():
+        if hasattr(v, 'items'):
+            yield k, dict(annotateliterals(v))
+        elif isinstance(v, str) and '\n' in v:
+            yield k, literal_str(v)
+        else:
+            yield k, v
+
+
+def yaml(data):
+    logger.debug("rendering %r", data)
+    data = dict(annotateliterals(data))
+    logger.debug("annotated %r", data)
+    data = libyaml.dump(data, default_flow_style=False)
+    logger.debug("rendered as %r", data)
+    return data

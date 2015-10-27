@@ -68,7 +68,15 @@ minions_{{ name }}_config_dir:
     - mode: 0770
     - makedirs: true
 
-{% set setup_grains = setup.get('grains', {}) -%}
+{% set pillars_bridge = setup.get('pillars', {}) -%}
+minions_{{ name }}_bridge:
+  file.managed:
+    - name: {{ config_dir }}/bridge/master_pillars.sls
+    - makedirs: true
+    - template: jinja
+    - source: salt://minions/files/bridge
+    - context:
+        pillars: {{ pillars_bridge }}
 
 minions_{{ name }}_minion_config:
   file.managed:
@@ -87,7 +95,6 @@ minions_{{ name }}_minion_config:
         config_dir: {{ config_dir }}
         log_dir: {{ log_dir }}
         deploy_root: {{ deploy_root }}
-        grains: {{ setup_grains }}
 
 minions_{{ name }}_log_dir:
   file.directory:

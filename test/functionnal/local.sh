@@ -27,7 +27,7 @@ $(base_grains)
   setups:
    myapp:
      path: ${TOP_SRCDIR}/test/fixtures/myapp
-     grains:
+     pillars:
        myapp:
          destdir: ${DESTDIR}
 EOF
