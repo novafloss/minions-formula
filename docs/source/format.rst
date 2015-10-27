@@ -45,6 +45,12 @@ It's just file tree matching the ``file_roots`` salt config option. The final
 
 You can call sls from app minion with ``minion.sls myapp.install``.
 
+.. notice::
+
+   As a special case, the directories in ``file_roots/base/`` are appended to
+   **all** environments file_roots. This allow te define common formulas once
+   in ``file_roots/base`` and reuse them in all environments.
+
 Deploying from git repository
 =============================
 
