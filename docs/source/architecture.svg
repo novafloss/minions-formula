@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="442.03125"
-   height="264.21875"
+   width="378.375"
+   height="267.75"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="126.34094"
-     inkscape:cy="35.289243"
+     inkscape:cx="150.01671"
+     inkscape:cy="48.719988"
      inkscape:document-units="pt"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
      fit-margin-bottom="4">
     <sodipodi:guide
        orientation="0,1"
-       position="17.777462,309.81053"
+       position="-13.347538,313.34178"
        id="guide3180" />
   </sodipodi:namedview>
   <metadata
@@ -63,21 +63,21 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-56.46875,-651.0625)">
+     transform="translate(-87.59375,-651.0625)">
     <rect
        y="741.22858"
-       x="153.08701"
-       height="169.43951"
-       width="248.79472"
+       x="184.19971"
+       height="172.97505"
+       width="185.15509"
        id="rect3026"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23666072;stroke-opacity:1" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23625004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.23625, 2.4725;stroke-dashoffset:0"
-       id="rect3058"
-       width="226.36182"
-       height="46.191406"
-       x="165.01056"
-       y="855.07275" />
+       y="854.14087"
+       x="198.03323"
+       height="53.262512"
+       width="159.18669"
+       id="rect3052"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23625004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.23625, 2.4725;stroke-dashoffset:0" />
     <text
        sodipodi:linespacing="125%"
        id="text3046"
@@ -105,13 +105,13 @@
        sodipodi:linespacing="125%"
        id="text3062"
        y="878.26001"
-       x="169.3125"
+       x="240.67969"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
        xml:space="preserve"><tspan
          y="878.26001"
-         x="169.3125"
+         x="240.67969"
          id="tspan3064"
-         sodipodi:role="line">salt-call --config-dir=app/.minion</tspan></text>
+         sodipodi:role="line">dev minion</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
        id="rect3157"
@@ -146,37 +146,37 @@
        transform="translate(0,2.8284271)">
       <rect
          y="749.48907"
-         x="171.16316"
-         height="53.262508"
-         width="211.51259"
+         x="198.03323"
+         height="53.262512"
+         width="159.18669"
          id="rect3058-0"
          style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23625004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.23625, 2.4725;stroke-dashoffset:0" />
       <text
          sodipodi:linespacing="125%"
          id="text2991"
          y="763.9635"
-         x="240.32422"
+         x="240.31055"
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
          xml:space="preserve"><tspan
            y="763.9635"
-           x="240.32422"
+           x="240.31055"
            id="tspan2993"
-           sodipodi:role="line">salt-minion</tspan></text>
+           sodipodi:role="line">ops minion</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3170"
          y="778.61084"
-         x="176.07007"
+         x="213.15479"
          style="font-size:11px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Italic"
          xml:space="preserve"><tspan
            y="778.61084"
-           x="176.07007"
+           x="213.15479"
            id="tspan3172"
-           sodipodi:role="line">- fetches app minion setup</tspan><tspan
+           sodipodi:role="line">- fetches dev minion setup</tspan><tspan
            id="tspan3178"
            y="792.36084"
-           x="176.07007"
-           sodipodi:role="line">- delegate to app's masterless salt-minion</tspan></text>
+           x="213.15479"
+           sodipodi:role="line">- delegate to dev's minion</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0"
@@ -187,24 +187,24 @@
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="74.226151"
+       x="99.681992"
        y="827.60522"
        id="text3795"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3797"
-         x="74.226151"
+         x="99.681992"
          y="827.60522">OPS world</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="73.863853"
+       x="99.319695"
        y="843.16156"
        id="text3799"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3801"
-         x="73.863853"
+         x="99.319695"
          y="843.16156">DEV world</tspan></text>
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
@@ -218,5 +218,75 @@
        id="path3035"
        d="m 277.48437,861.56151 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1" />
+    <g
+       transform="translate(0,2.8284271)"
+       id="g3018">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23625004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.23625, 2.4725;stroke-dashoffset:0"
+         id="rect3020"
+         width="159.18669"
+         height="53.262512"
+         x="198.03323"
+         y="749.48907" />
+      <text
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+         x="240.31055"
+         y="763.9635"
+         id="text3022"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3024"
+           x="240.31055"
+           y="763.9635">ops minion</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:11px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Italic"
+         x="213.15479"
+         y="778.61084"
+         id="text3026"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3028"
+           x="213.15479"
+           y="778.61084">- fetches dev minion setup</tspan><tspan
+           sodipodi:role="line"
+           x="213.15479"
+           y="792.36084"
+           id="tspan3030">- delegate to dev's minion</tspan></text>
+    </g>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23625004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.23625, 2.4725;stroke-dashoffset:0"
+       id="rect3034"
+       width="159.18669"
+       height="53.262512"
+       x="198.03323"
+       y="752.3175" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       x="240.31055"
+       y="766.79193"
+       id="text3036"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3038"
+         x="240.31055"
+         y="766.79193">ops minion</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Italic"
+       x="213.15479"
+       y="781.43927"
+       id="text3040"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3042"
+         x="213.15479"
+         y="781.43927">- fetches dev minion setup</tspan><tspan
+         sodipodi:role="line"
+         x="213.15479"
+         y="795.18927"
+         id="tspan3044">- delegate to dev's minion</tspan></text>
   </g>
 </svg>
