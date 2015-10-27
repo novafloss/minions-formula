@@ -9,16 +9,18 @@ Here is the tree of sample minion:
 
 ::
 
-   .
-   ├── pillars
-   │   └── base
-   │       ├── settings.sls
-   │       └── top.sls
-   └── states
-       ├── dumbproject
-       │   ├── install.sls
-       │   └── map.jinja
-       └── install.sls
+  .
+  ├── file_roots
+  │   └── base
+  │       └── dumbproject
+  │           └── dumbproject
+  │               ├── install.sls
+  │               └── map.jinja
+  └── pillars
+      └── base
+          ├── settings.sls
+          └── top.sls
+
 
 ``pillars`` directory
 =====================
@@ -30,11 +32,17 @@ final pillar_roots will contains::
     {{ env }}:
       - /path/to/deploy/code/pillars/{{ env }}
 
-``states`` directory
-====================
+``file_roots`` directory
+========================
 
-Is a regular formula directory, containing :term:`actions <action>`. In the sample,
-``install.sls`` implements the ``install`` action.
+It's just file tree matching the ``file_roots`` salt config option. The final
+``file_roots`` will contains::
+
+  file_roots:
+    base:
+      - /path/to/minion/file_roots/base/dumbproject
+
+You can call sls in app minion with ``minion.sls dumbproject.install``.
 
 Deploying from git repository
 =============================
