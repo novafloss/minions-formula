@@ -26,6 +26,9 @@ log_level: debug
 log_file: ${TMP_DIR}/log/salt
 cachedir: ${TMP_DIR}/cache/salt
 file_client: local
+pillar_roots:
+  base:
+    - ${TOP_SRCDIR}/test/fixtures/pillars/
 file_roots:
   base:
     - ${TOP_SRCDIR}/
