@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="479.34375"
-   height="203.4375"
+   width="358.21875"
+   height="283.09375"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="253.32356"
-     inkscape:cy="-67.511064"
+     inkscape:cx="-2.8930048"
+     inkscape:cy="22.346855"
      inkscape:document-units="pt"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,12 +39,12 @@
      showguides="false"
      inkscape:guide-bbox="true"
      fit-margin-top="4"
-     fit-margin-left="4"
-     fit-margin-right="4"
+     fit-margin-left="64"
+     fit-margin-right="64"
      fit-margin-bottom="4">
     <sodipodi:guide
        orientation="0,1"
-       position="36.433712,223.56051"
+       position="-24.128788,306.06053"
        id="guide3180" />
   </sodipodi:namedview>
   <metadata
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,75 +63,41 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-37.8125,-625.59375)">
+     transform="translate(-98.375,-628.4375)">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
-       id="rect3157"
-       width="111.01576"
-       height="58.689861"
-       x="42.426407"
-       y="756.79163" />
+       y="741.22858"
+       x="162.9865"
+       height="64.787727"
+       width="228.99574"
+       id="rect3026"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23666072;stroke-opacity:1" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.23666072;stroke-opacity:1"
        id="rect3058"
-       width="306.0704"
-       height="194.18829"
-       x="206.46378"
-       y="630.21283" />
+       width="191.0065"
+       height="52.555359"
+       x="181.98112"
+       y="854.36566" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="50.103565"
-       y="777.39868"
-       id="text2987"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2989"
-         x="50.103565"
-         y="777.39868">salt-master</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="216.67773"
-       y="777.39868"
+       x="240.32422"
+       y="760.42804"
        id="text2991"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2993"
-         x="216.67773"
-         y="777.39868">salt-minion</tspan></text>
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
-       d="m 213.03303,774.2612 -12.43511,-12.4351 0,8.45017 -51.85683,0 0,7.96986 51.85683,0 0,8.45017 z"
-       id="rect3017"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccc" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
-       d="m 243.20601,754.99992 7.5876,0 0,-82.11605 59.41053,0 0,8.46875 12.4375,-12.4375 -12.4375,-12.4375 0,8.4375 -66.99813,0 z"
-       id="path3024"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccc" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text3034"
-       y="793.46014"
-       x="58.99297"
-       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       xml:space="preserve"><tspan
-         y="793.46014"
-         x="58.99297"
-         id="tspan3036"
-         sodipodi:role="line">- minions-formula</tspan></text>
+         x="240.32422"
+         y="760.42804">salt-minion</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3046"
-       y="688.80835"
-       x="342.54279"
+       y="893.86932"
+       x="220.39771"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        xml:space="preserve"><tspan
-         y="688.80835"
-         x="342.54279"
+         y="893.86932"
+         x="220.39771"
          id="tspan3048"
          sodipodi:role="line">- file_roots: app/.minion</tspan></text>
     <text
@@ -149,68 +115,108 @@
     <text
        sodipodi:linespacing="125%"
        id="text3062"
-       y="673.90619"
-       x="334.77115"
+       y="878.26001"
+       x="193.82275"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
        xml:space="preserve"><tspan
-         y="673.90619"
-         x="334.77115"
+         y="878.26001"
+         x="193.82275"
          id="tspan3064"
          sodipodi:role="line">salt-call --config-dir=app/</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
+       id="rect3157"
+       width="111.01576"
+       height="58.689861"
+       x="221.9765"
+       y="633.04797" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       x="239.96191"
+       y="653.65503"
+       id="text2987"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2989"
+         x="239.96191"
+         y="653.65503">salt-master</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3034"
+       y="669.71649"
+       x="238.54306"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         y="669.71649"
+         x="238.54306"
+         id="tspan3036"
+         sodipodi:role="line">- minions-formula</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       x="58.99297"
-       y="806.8952"
+       x="238.54306"
+       y="683.15155"
        id="text3166"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3168"
-         x="58.99297"
-         y="806.8952">- pillars</tspan></text>
+         x="238.54306"
+         y="683.15155">- pillars</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Italic"
-       x="227.28439"
-       y="793.46014"
+       x="176.07007"
+       y="776.48956"
        id="text3170"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3172"
-         x="227.28439"
-         y="793.46014">- fetches projects</tspan><tspan
+         x="176.07007"
+         y="776.48956">- fetches app minion setup</tspan><tspan
          sodipodi:role="line"
-         x="227.28439"
-         y="807.21014"
-         id="tspan3178">- setup isolated salt masterless for app</tspan></text>
+         x="176.07007"
+         y="790.23956"
+         id="tspan3178">- delegate to app's masterless salt-minion</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0"
-       d="m 34.97298,716.88891 541.64378,0"
+       d="m 34.97298,831.44021 541.64378,0"
        id="path3025"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="43.820564"
-       y="733.56006"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       x="103.21753"
+       y="844.57581"
        id="text3795"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3797"
-         x="43.820564"
-         y="733.56006">OPS world</tspan></text>
+         x="103.21753"
+         y="844.57581">OPS world</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
-       x="5.6568542"
-       y="108.67267"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       x="102.85523"
+       y="826.89813"
        id="text3799"
-       sodipodi:linespacing="125%"
-       transform="translate(37.801407,600.84576)"><tspan
+       sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3801"
-         x="5.6568542"
-         y="108.67267">DEV world</tspan></text>
+         x="102.85523"
+         y="826.89813">DEV world</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
+       d="m 277.48437,746.3031 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
+       id="rect3017"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0"
+       id="path3035"
+       d="m 277.48437,861.56151 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1" />
   </g>
 </svg>
