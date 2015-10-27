@@ -1,11 +1,12 @@
-=================================
- :term:`Minions <minion>` format
-=================================
+=====================================
+ :term:`Minions <dev minion>` format
+=====================================
 
-A minion is defined by a directory containing salt files. Minions provides
-states and pillars. You can see it as a set of formulas tighted with pillars.
+A :term:`dev minion` is defined by a directory containing salt files. A
+:term:`dev minion` provides states and pillars. You can see it as a set of
+formulas tighted with pillars.
 
-Here is the tree of sample minion:
+Here is the tree of sample :term:`dev minion`:
 
 ::
 
@@ -25,7 +26,7 @@ Here is the tree of sample minion:
 ``pillars`` directory
 =====================
 
-Contains a directory for each targetted environement (e.g, dev, qa, prod). The
+Contains a directory for each targetted environment (e.g, dev, qa, prod). The
 final pillar_roots will contains::
 
   pillar_roots:
