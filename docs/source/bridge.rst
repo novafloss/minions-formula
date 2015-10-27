@@ -3,7 +3,8 @@
 ################################################
 
 Ops can inject pillar into app minion from the overlord. This is called the
-bridge.
+bridge. Each minion setup has a ``pillars`` key. These pillars are rendered as
+YAML in a pillar sls named ``master_pillars``.
 
 .. code-block:: yaml
 
