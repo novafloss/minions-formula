@@ -1,1 +1,1 @@
-{{ salt['minions.yaml'](pillars) }}
+{{ pillars|yaml }}
