@@ -25,10 +25,10 @@ minions:
 $(base_grains)
 # Here, configure the minions formula
   setups:
-   dumb:
-     path: ${TOP_SRCDIR}/test/fixtures/dumb-project
+   myapp:
+     path: ${TOP_SRCDIR}/test/fixtures/myapp
      grains:
-       dumbproject:
+       myapp:
          destdir: ${DESTDIR}
 EOF
 }
@@ -49,7 +49,7 @@ teardown () {
 # Execute tests commands. Not the suffixed salt-call_ function. It's just an
 # alias to execute salt-call in the isolated environment.
 salt-call_ state.sls minions
-salt-call_ minions.sls dumb dumbproject.install
+salt-call_ minions.sls myapp myapp.install
 
 # asserts than test is successful.
-test -e ${DESTDIR}/dumb-installed
+test -e ${DESTDIR}/myapp-installed

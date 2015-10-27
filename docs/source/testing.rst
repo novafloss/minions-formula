@@ -24,6 +24,6 @@ A functionnal test of minions-formula is a schell script. Here is a template scr
 .. literalinclude:: ../../test/functionnal/local.sh
    :language: sh
 
-A minimal minion is available in test/fixtures/dumb-project. This minion just
-create a file ``/dumb-installed`` when it is executed. Use this minion to test
+A minimal minion is available in ``test/fixtures/myapp``. This minion just
+create a file ``/myapp-installed`` when it is executed. Use this minion to test
 minions-formula is properly configured.

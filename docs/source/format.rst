@@ -12,8 +12,8 @@ Here is the tree of sample minion:
   .
   ├── file_roots
   │   └── base
-  │       └── dumbproject-formula
-  │           └── dumbproject
+  │       └── myapp-formula
+  │           └── myapp
   │               ├── install.sls
   │               └── map.jinja
   └── pillars
@@ -40,9 +40,9 @@ It's just file tree matching the ``file_roots`` salt config option. The final
 
   file_roots:
     base:
-      - /path/to/minion/file_roots/base/dumbproject-formula
+      - /path/to/myapp-minion/file_roots/base/myapp-formula
 
-You can call sls from app minion with ``minion.sls dumbproject.install``.
+You can call sls from app minion with ``minion.sls myapp.install``.
 
 Deploying from git repository
 =============================

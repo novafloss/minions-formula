@@ -12,14 +12,14 @@ cd ${TOP_SRCDIR}
 function setup {
     base_setup
 
-    # Create a temporary dumb git repository
-    export GIT_WORKTREE=${TMP_DIR}/dumb
+    # Create a temporary git repository
+    export GIT_WORKTREE=${TMP_DIR}/myapp
     export GIT_DIR=${GIT_WORKTREE}/.git
     mkdir -p ${GIT_WORKTREE}
     git init
     git checkout -b master
-    # Put dumb deploy code in a .deploy/ directory
-    cp -ar ${TOP_SRCDIR}/test/fixtures/dumb-project ${GIT_WORKTREE}/.minion
+    # Put myapp minion code in a .minion/ directory
+    cp -ar ${TOP_SRCDIR}/test/fixtures/myapp ${GIT_WORKTREE}/.minion
     pushd ${GIT_WORKTREE}
     git add -f .minion
     popd
@@ -29,11 +29,11 @@ function setup {
 minions:
 $(base_grains)
   setups:
-   dumb:
+   myapp:
      git: ${GIT_DIR}
      version: master
      grains:
-       dumbproject:
+       myapp:
          destdir: ${DESTDIR}
 EOF
 }
@@ -41,6 +41,6 @@ EOF
 . test/_testlib.sh
 
 salt-call_ state.sls minions
-salt-call_ minions.sls dumb dumbproject.install
+salt-call_ minions.sls myapp myapp.install
 
-test -e ${DESTDIR}/dumb-installed
+test -e ${DESTDIR}/myapp-installed
