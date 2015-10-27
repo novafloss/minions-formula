@@ -5,8 +5,17 @@
 .. glossary::
    :sorted:
 
-   minion
-      The deployement code to deploy your product.
+   master
+     The salt-master, configured with minion-formula and managing other minion
+     in the plateforme.
+
+   ops minion
+     The regular salt-minion, bound to the :term:`master`.
+
+   dev minion
+
+     The masterless salt minion. This minion is isolated from :term:`ops
+     minion`, deployed by minion-formula.
 
    setup
-      The configuration to fetch a project and activate a project.
+      A set of parameters to deploy a :term:`dev minion` for an app.

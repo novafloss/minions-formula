@@ -2,25 +2,35 @@
  Bridging pillar from salt-master to app minion
 ################################################
 
-Ops can inject pillar into app minion from the overlord. This is called the
-bridge. Each minion setup has a ``pillars`` key. These pillars are rendered as
-YAML in a pillar sls named ``master_pillars``.
+Ops can push pillar into app minion from the :term:`master`. This is called the
+*bridge*. Each :term:`setup` has a ``pillars`` key. The bridge copies these
+pillars in a sls named ``master_pillars``.
 
 .. code-block:: yaml
 
    minions:
      myapp:
-       git: git@github.com:mycompany/myapp
        pillars:
-         myapp:
-           database_dsn: postgres://username:password@host/database
+         database_dsn: postgres://username:password@host/database
 
-In the minion, you can include these pillars with ``top.sls``:
+In the :term:`dev minion`, you can include these pillars with ``top.sls``:
 
 .. code-block:: yaml
 
    {{ env }}:
       '*':
         - master_pillars
+
+And here is how to use it in the states:
+
+.. code-block:: yaml
+
+   myapp_settings:
+     file.managed:
+       - name: /etc/myapp.cfg
+       - source: salt://myapp/files/myapp.cfg
+       - template: jinja
+       - context:
+           database: {{ pillar.database_dsn }}
 
 The structure of these pillars is a contract between dev and ops.
