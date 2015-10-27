@@ -3,7 +3,7 @@
 =================================
 
 A minion is defined by a directory containing salt files. Minions provides
-states and pillars. You can see it as a formula tighted with pillars.
+states and pillars. You can see it as a set of formulas tighted with pillars.
 
 Here is the tree of sample minion:
 
@@ -29,8 +29,8 @@ Contains a directory for each targetted environement (e.g, dev, qa, prod). The
 final pillar_roots will contains::
 
   pillar_roots:
-    {{ env }}:
-      - /path/to/deploy/code/pillars/{{ env }}
+    base:
+      - /path/to/deploy/code/pillars/base
 
 ``file_roots`` directory
 ========================
