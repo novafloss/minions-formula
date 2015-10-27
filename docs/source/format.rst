@@ -48,8 +48,8 @@ Deploying from git repository
 =============================
 
 You can fetch a minion configuration from a git repository. Put the minion
-directory in ``.minion`` in the root of your project and setup salt to clone
-the project repository:
+directory in ``.minion`` in the root of your project and ask minions-formula to
+clone the project repository:
 
 .. code-block:: yaml
 
