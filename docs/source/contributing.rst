@@ -1,6 +1,6 @@
-=====================
- Functionnal Testing
-=====================
+==============
+ Contributing
+==============
 
 .. image:: https://circleci.com/gh/novafloss/minions-formula.svg?style=shield
    :target: https://circleci.com/gh/novafloss/minions-formula

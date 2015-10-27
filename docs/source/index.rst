@@ -13,6 +13,6 @@ Contents:
    purpose
    format
    bridge
-   testing
+   contributing
    readme
    glossary
