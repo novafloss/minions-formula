@@ -206,18 +206,6 @@
          id="tspan3801"
          x="99.319695"
          y="843.16156">DEV world</tspan></text>
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
-       d="m 277.48437,757.61686 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
-       id="rect3017"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccc" />
-    <path
-       sodipodi:nodetypes="cccccccc"
-       inkscape:connector-curvature="0"
-       id="path3035"
-       d="m 277.48437,861.56151 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1" />
     <g
        transform="translate(0,2.8284271)"
        id="g3018">
@@ -288,5 +276,17 @@
          x="213.15479"
          y="795.18927"
          id="tspan3044">- delegate to dev's minion</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
+       d="m 277.48437,757.61686 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
+       id="rect3017"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0"
+       id="path3035"
+       d="m 277.48437,861.56151 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1" />
   </g>
 </svg>
