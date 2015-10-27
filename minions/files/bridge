@@ -1,1 +1,1 @@
-{{ pillars|yaml }}
+{{ pillars|yaml(False) }}

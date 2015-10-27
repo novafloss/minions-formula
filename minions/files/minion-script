@@ -9,11 +9,13 @@ case ${1-} in
         miniondir={{ deploy_root }}
         echo 'file_roots:'
         env={{ env }}
-        envdir=${miniondir}/file_roots/$env/
-        basedir=${miniondir}/file_roots/base/
+        envdir=${miniondir}/file_roots/$env
+        basedir=${miniondir}/file_roots/base
         echo "  $env:"
         # Skip base env as it is always rendered just below.
-        echo ${envdir}/*/ | sort | sed 's,^,    - ,'
+        if [ -d ${envdir} ] ; then
+            echo ${envdir}/*/ | sort | sed 's,^,    - ,'
+        fi
         # We always put base/ directory at end of file_roots. This allow
         # dev to push formulas in base/.
         if [ -d ${basedir} -a "$env" != "base" ] ; then
@@ -22,6 +24,6 @@ case ${1-} in
 
     ;;
     *)
-        exec salt-call --config-dir={{ config_dir }} $@ saltenv={{ env }}
+        exec salt-call --config-dir={{ config_dir }} $@
         ;;
 esac

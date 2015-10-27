@@ -7,15 +7,10 @@ file_client: local
 cachedir: {{ cache_dir }}
 log_level: debug
 log_file: {{ log_dir }}/salt.log
-file_roots:
-# Workaround bug https://github.com/saltstack/salt/pull/26515
-{%- if env != 'base' %}
-  base:
-    - {{ deploy_root }}/states
-{%- endif %}
-  {{ env }}:
-    - {{ deploy_root }}/states
 pillar_roots:
   {{ env }}:
     - {{ deploy_root }}/pillars/{{ env }}
+{%- if env != 'base' %}
+    - {{ deploy_root }}/pillars/base/
+{%- endif %}
     - {{ config_dir }}/bridge/

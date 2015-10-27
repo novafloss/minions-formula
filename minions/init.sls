@@ -120,8 +120,15 @@ minions_{{ name }}_script:
 
 {% set filerootfile = config_dir ~ '/minion.d/file_roots.conf' -%}
 minions_{{ name }}_file_roots:
-  cmd.run:
+  cmd.wait:
     - name: {{ minion_script }} find-file-roots > {{ filerootfile }}
-    - unless: test -f {{ filerootfile }}
+    - watch:
+        - file: minions_{{ name }}_script
+        - file: minions_{{ name }}_minion_config
+
+minions_{{ name }}_refresh_pillar:
+  minions.module:
+    - name: saltutil.refresh_pillar
+    - minion: {{ name }}
 
 {% endfor %}
