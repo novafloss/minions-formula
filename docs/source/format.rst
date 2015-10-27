@@ -12,7 +12,7 @@ Here is the tree of sample minion:
   .
   ├── file_roots
   │   └── base
-  │       └── dumbproject
+  │       └── dumbproject-formula
   │           └── dumbproject
   │               ├── install.sls
   │               └── map.jinja
@@ -40,7 +40,7 @@ It's just file tree matching the ``file_roots`` salt config option. The final
 
   file_roots:
     base:
-      - /path/to/minion/file_roots/base/dumbproject
+      - /path/to/minion/file_roots/base/dumbproject-formula
 
 You can call sls in app minion with ``minion.sls dumbproject.install``.
 
