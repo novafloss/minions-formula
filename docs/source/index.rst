@@ -12,6 +12,7 @@ Contents:
 
    purpose
    format
+   bridge
    testing
    readme
    glossary

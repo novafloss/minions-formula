@@ -42,7 +42,7 @@ It's just file tree matching the ``file_roots`` salt config option. The final
     base:
       - /path/to/minion/file_roots/base/dumbproject-formula
 
-You can call sls in app minion with ``minion.sls dumbproject.install``.
+You can call sls from app minion with ``minion.sls dumbproject.install``.
 
 Deploying from git repository
 =============================
