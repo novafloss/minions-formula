@@ -1,10 +1,10 @@
-################################################
- Bridging pillar from salt-master to app minion
-################################################
+#################
+ Pushing pillars
+#################
 
-Ops can push pillar into app minion from the :term:`master`. This is called the
-*bridge*. Each :term:`setup` has a ``pillars`` key. The bridge copies these
-pillars in a sls named ``master_pillars``.
+Ops can push pillar into :term:`dev minion` from the :term:`master`. This is
+called the *bridge*. Each :term:`setup` has a ``pillars`` key. The bridge
+copies these pillars in a sls named ``master_pillars``.
 
 .. code-block:: yaml
 
