@@ -32,7 +32,7 @@ $(base_grains)
    myapp:
      git: ${GIT_DIR}
      version: master
-     grains:
+     pillars:
        myapp:
          destdir: ${DESTDIR}
 EOF
