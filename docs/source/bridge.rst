@@ -16,7 +16,7 @@ bridge.
 
 In the minion, you can include these pillar ``top.sls`` with:
 
-.. code-block::
+.. code-block:: yaml
 
    {{ env }}:
       '*':
