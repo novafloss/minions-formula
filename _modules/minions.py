@@ -1,7 +1,6 @@
 import logging
 import os
 import subprocess
-import yaml as libyaml
 
 import salt.exceptions as exc
 
