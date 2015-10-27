@@ -8,22 +8,20 @@ case ${1-} in
     find-file-roots)
         miniondir={{ deploy_root }}
         echo 'file_roots:'
+        env={{ env }}
+        envdir=${miniondir}/file_roots/$env/
         basedir=${miniondir}/file_roots/base/
-        for envdir in $(echo ${miniondir}/file_roots/*/ | sort) ; do
-            env=$(basename ${envdir})
-            echo "  ${env}:"
-            # Skip base env as it is always rendered just below.
-            if [ "${env}" != "base" ] ; then
-                echo ${envdir}/*/ | sort | sed 's,^,    - ,'
-            fi
-            # We always put base/ directory at end of file_roots. This allow
-            # dev to push formulas in base/.
-            if test -d ${basedir} ; then
-                echo ${basedir}/*/ | sort | sed 's,^,    - ,'
-            fi
-        done
+        echo "  $env:"
+        # Skip base env as it is always rendered just below.
+        echo ${envdir}/*/ | sort | sed 's,^,    - ,'
+        # We always put base/ directory at end of file_roots. This allow
+        # dev to push formulas in base/.
+        if [ -d ${basedir} -a "$env" != "base" ] ; then
+            echo ${basedir}/*/ | sort | sed 's,^,    - ,'
+        fi
+
     ;;
     *)
-        exec salt-call --config-dir={{ config_dir }} $@
+        exec salt-call --config-dir={{ config_dir }} $@ saltenv={{ env }}
         ;;
 esac

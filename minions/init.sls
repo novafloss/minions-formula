@@ -114,11 +114,9 @@ minions_{{ name }}_script:
     - template: jinja
     - source: salt://minions/files/minion-script
     - context:
-        minions: {{ minions }}
-        name: {{ name }}
-        setup: {{ setup }}
         config_dir: {{ config_dir }}
         deploy_root: {{ deploy_root }}
+        env: {{ env }}
 
 {% set filerootfile = config_dir ~ '/minion.d/file_roots.conf' -%}
 minions_{{ name }}_file_roots:
