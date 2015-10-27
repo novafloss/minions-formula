@@ -14,7 +14,7 @@ bridge.
          myapp:
            database_dsn: postgres://username:password@host/database
 
-In the minion, you can include these pillar ``top.sls`` with:
+In the minion, you can include these pillars with ``top.sls``:
 
 .. code-block:: yaml
 
@@ -22,4 +22,4 @@ In the minion, you can include these pillar ``top.sls`` with:
       '*':
         - master_pillars
 
-The content of this pillar is a contract between dev and ops.
+The structure of these pillars is a contract between dev and ops.
