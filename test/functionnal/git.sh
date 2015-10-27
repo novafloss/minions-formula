@@ -41,6 +41,6 @@ EOF
 . test/_testlib.sh
 
 salt-call_ state.sls minions
-salt-call_ minions.sls dumb install
+salt-call_ minions.sls dumb dumbproject.install
 
 test -e ${DESTDIR}/dumb-installed

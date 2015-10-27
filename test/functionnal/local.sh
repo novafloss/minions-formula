@@ -49,7 +49,7 @@ teardown () {
 # Execute tests commands. Not the suffixed salt-call_ function. It's just an
 # alias to execute salt-call in the isolated environment.
 salt-call_ state.sls minions
-salt-call_ minions.sls dumb install
+salt-call_ minions.sls dumb dumbproject.install
 
 # asserts than test is successful.
 test -e ${DESTDIR}/dumb-installed
