@@ -188,24 +188,24 @@
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
        x="74.226151"
-       y="844.57581"
+       y="827.60522"
        id="text3795"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3797"
          x="74.226151"
-         y="844.57581">OPS world</tspan></text>
+         y="827.60522">OPS world</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
        x="73.863853"
-       y="826.89813"
+       y="843.16156"
        id="text3799"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3801"
          x="73.863853"
-         y="826.89813">DEV world</tspan></text>
+         y="843.16156">DEV world</tspan></text>
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.25;stroke-opacity:1"
        d="m 277.48437,757.61686 12.43511,-12.43511 -8.45018,0 0,-46.90708 -7.96986,0 0,46.90708 -8.45017,0 z"
