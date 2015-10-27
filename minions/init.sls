@@ -97,9 +97,10 @@ minions_{{ name }}_log_dir:
     - mode: 0770
     - makedirs: true
 
+{% set minion_script = '/usr/local/sbin/minion-' ~ name -%}
 minions_{{ name }}_script:
   file.managed:
-    - name: /usr/local/sbin/minion-{{ name }}
+    - name: {{ minion_script }}
     - user: root
     - group: root
     - mode: 0770
@@ -110,5 +111,12 @@ minions_{{ name }}_script:
         name: {{ name }}
         setup: {{ setup }}
         config_dir: {{ config_dir }}
+        deploy_root: {{ deploy_root }}
+
+{% set filerootfile = config_dir ~ '/minion.d/file_roots.conf' -%}
+minions_{{ name }}_file_roots:
+  cmd.run:
+    - name: {{ minion_script }} find-file-roots > {{ filerootfile }}
+    - unless: test -f {{ filerootfile }}
 
 {% endfor %}
