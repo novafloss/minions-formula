@@ -38,7 +38,8 @@ def module(name, minion, **kwargs):
 
     try:
         out = minions_module(minion, name, **kwargs)
-        ret['changes']['out'] = out
+        if out:
+            ret['changes']['out'] = out
     except Exception, e:
         ret['comment'] = e.message
         ret['result'] = False

@@ -1,6 +1,7 @@
 import logging
 import os
 import subprocess
+from tempfile import NamedTemporaryFile
 
 import salt.exceptions as exc
 
@@ -33,14 +34,16 @@ def module(minion, name, *args, **kwargs):
         args.append('%s=%s' % (k, v))
 
     logger.debug("Calling %r", args)
+
+    stderr = NamedTemporaryFile(
+        prefix=script + '-' + name + '-', suffix='.stderr')
     child = subprocess.Popen(
-        args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        args, stdout=stderr, stderr=stderr)
     child.wait()
 
-    out = ""
-    out += child.stderr.read()
-    out += "\n"
-    out += child.stdout.read()
+    stderr.seek(0)
+    out = stderr.read()
+    stderr.close()
 
     if child.returncode != 0:
         raise exc.CommandExecutionError(out)
