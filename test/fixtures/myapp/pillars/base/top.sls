@@ -1,3 +1,3 @@
 {{ env }}:
   '*':
-    - master_pillars
+    - opspillar

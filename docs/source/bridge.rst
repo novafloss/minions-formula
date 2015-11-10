@@ -3,8 +3,8 @@
 #################
 
 Ops can push pillar into :term:`dev minion` from the :term:`master`. This is
-called the *bridge*. Each :term:`setup` has a ``pillars`` key. The bridge
-copies these pillars in a sls named ``master_pillars``.
+called the *bridge*. Each :term:`setup` has a ``opspillar`` key. The bridge
+copies these pillars in a sls named ``opspillar``.
 
 .. code-block:: yaml
 
@@ -19,7 +19,7 @@ In the :term:`dev minion`, you can include these pillars with ``top.sls``:
 
    {{ env }}:
       '*':
-        - master_pillars
+        - opspillar
 
 And here is how to use it in the states:
 
